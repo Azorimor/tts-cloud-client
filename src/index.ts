@@ -9,6 +9,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    title: 'TTS Cloud Client',
     height: 600,
     width: 800,
   });
@@ -18,6 +19,7 @@ const createWindow = (): void => {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+  // mainWindow.setMenu(null);
 };
 
 // This method will be called when Electron has finished
